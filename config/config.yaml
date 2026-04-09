@@ -1,0 +1,25 @@
+# Multi Tenant Saas Platform Configuration
+
+app:
+  name: "Multi Tenant Saas Platform"
+  version: "2.0.0"
+  debug: false
+
+features:
+  - 1000 tenants
+  - Isolation
+  - Scaling
+
+tech_stack:
+  - Django
+  - PostgreSQL
+  - Schema separation
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+
+logging:
+  level: INFO
+  format: "%(asctime)s | %(levelname)s | %(message)s"
